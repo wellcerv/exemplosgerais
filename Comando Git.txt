@@ -1,0 +1,10 @@
+Comando Git
+
+Criar um novo Repositorio
+
+Comando - git init Nome_do_Repositorio
+
+
+Clonar um repositorio
+
+Comando - git clone Caminho_GitHub
