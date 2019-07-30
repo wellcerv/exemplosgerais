@@ -23,6 +23,11 @@ git merge NomeDaBranch -> Temos que esta dentro da branch que queremos atualizar
 Utilizando o Rebase para atualizar/juntar duas branch
 git rebase NomeDaBranch -> Temos que esta dentro da branch que queremos atualizar.
 
+Utilizando o Fetch para baixar arquivos do GitHub mesmo depois de um commit sem utilizar o pull antes
+git fetch -> Tem que esta dentro da branch que queremos atualizar
+git rebase -> Neste caso utilizamos após o git fetch para poder mesclar as informacoes
+git rebase --continue -> Utilizado depois de solucionar os conflitos dos arquivos
+
 
 Utilizando Checkout, Revert e Reset
 git checkout numero do commit -> Visualiza o arquivo no momento do commit feito (O numero se obtem com git log)
