@@ -1,4 +1,4 @@
-Git via terminal
+﻿Git via terminal
 
 Ronneesley Moura Teles edited this page on 15 Aug 2017 · 2 revisions
 
@@ -10,9 +10,22 @@ Git init Nome_do_Repositório
 Clonando o repositório
 git clone https://github.com/pwii-2019-1 
 
-Alterando o branch
-git checkout primeira_codificacao
-A partir deste comando todos são emitidos do diretório do repositório, neste caso controleestoque_c.
+Utilizando Branch
+git branch -> Verifica a Branch atual
+git branch NomeDaBranch -> Cria uma nova Branch
+git branch -d NomeDaBranck -> Excluiu uma Branch
+git checkout NomeDaBranch -> Muda para uma Branch
+
+Utilizando Checkout, Revert e Reset
+git checkout numero do commit -> Visualiza o arquivo no momento do commit feito (O numero se obtem com git log)
+git checkout master -> Volta ao ponto normal do repositorio
+git checkout -- NomeDoArquivo -> Descarta todas as alteracoes feita no arquivo antes do ADD
+git checkout -- . -> Descarta todos as alteracoes de todos os arquivos no repositorio antes do ADD
+git checkout HEAD -- NomeDoArquivo -> Descarta as alteracoes de um arquivo mesmo depois do comando ADD
+git revert numero do commit -> Descarta as alteracoes do arquivo mesmo depois de um commit
+git reset HEAD~1 -> Desfaz o ultimo commit efetuado no repositorio sem descartar as alterações dos arquivos
+git reset HEAD~1 -- hard -> Desfaz o ultimo commit e desfaz as alteracoes feita nos arquivos
+
 
 Registrando alterações
 Git add  -A ou Git add .
@@ -57,7 +70,7 @@ Git config --global user.email "EmailDoUsuario"
 
 
 Exibir Diferenças entre commits
-Git DIFF HEAD~1 - Mostra a diferença do ultimo commit
+Git DIFF HEAD~1 -> Mostra a diferença do ultimo commit
 
 
 Listas  pastas e arquivos no Terminal (Incluindo Pasta Oculta)
