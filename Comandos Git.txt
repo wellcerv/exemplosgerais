@@ -95,3 +95,6 @@ ls  -al
 
 Apagar o vinculo que a pasta Git tem com o GitHub
 Rm -rf .git
+
+Adicionar uma imagem no arquivo README.ME
+![TituloDaImagem](ArquivoDaImagem)
