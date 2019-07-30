@@ -28,6 +28,10 @@ git fetch -> Tem que esta dentro da branch que queremos atualizar
 git rebase -> Neste caso utilizamos após o git fetch para poder mesclar as informacoes
 git rebase --continue -> Utilizado depois de solucionar os conflitos dos arquivos
 
+Utilizando Tag para criar um repositório de estado (Que não se modifica mais com commit)
+git tag NomeDaTag - > Cria uma nova Tag a partir do repositorio que estamos
+git checkout NomeDaTag -> Alterna para a Tag Criada
+
 
 Utilizando Checkout, Revert e Reset
 git checkout numero do commit -> Visualiza o arquivo no momento do commit feito (O numero se obtem com git log)
