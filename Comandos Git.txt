@@ -20,6 +20,9 @@ Git push -u origin NomeDaBranch -> Esse é o primeiro push da nova Branch criada
 Utilizando o Merge
 git merge NomeDaBranch -> Temos que esta dentro da branch que queremos atualizar.
 
+Utilizando o Rebase para atualizar/juntar duas branch
+git rebase NomeDaBranch -> Temos que esta dentro da branch que queremos atualizar.
+
 
 Utilizando Checkout, Revert e Reset
 git checkout numero do commit -> Visualiza o arquivo no momento do commit feito (O numero se obtem com git log)
