@@ -52,6 +52,7 @@ Git status
 
 Verifica o status atual do Commit
 Git Log
+git show
 
 Verificar se o git esta lincado remotamente
 Git Remote -v
@@ -78,8 +79,13 @@ git pull
 Use este comando sempre antes de editar, evita conflitos de arquivos.
 
 
-Descartar modificações
-git stash
+Quardar alteracoes no Working Directory
+git stash -> Deixa todas as alterações do repositório guardadas, limpando a branch temporariamente (Antes dos commits)
+git stash list -> Lista todas stash feitas no repositório
+git stash pop -> Restaura os arquivos que foram guardados no ultimo stach
+
+Verificar as alteracoes linha por linha 
+git blame NomeDoArquivo
 
 Configurando arquivos a serem ignorados
 Na raiz do repositório temos que criar um arquivo com o nome .gitignore
