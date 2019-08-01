@@ -59,6 +59,7 @@ Git Remote -v
 Comitar as alterações feitas
 git commit -m "Mensagem descrevendo o que foi alterado."
 OBS: Se caso deixar sem o comentário, o git abrirar o editor para poder colocar a descrição
+git commit --amend -> Edit o ultimo comite feito, podendo ser alterado esse commit
 
 Salvar um arquivo no VI via Terminal
 :wq
@@ -79,6 +80,14 @@ Use este comando sempre antes de editar, evita conflitos de arquivos.
 
 Descartar modificações
 git stash
+
+Configurando arquivos a serem ignorados
+Na raiz do repositório temos que criar um arquivo com o nome .gitignore
+Dentro deste arquivo colocar as pastas e arquivos que devem ser ignorados
+Exemplos:
+	.project -> Vai ignorar a pasta project
+	node_modules/ -> Vai ignorar a pasta node_modules
+	**/*.css -> Vai ignorar todos os arquivos que tenha a extensão css
 
 
 Configurar o Usuário Global do Git
